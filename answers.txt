@@ -1,0 +1,18 @@
+Answers to level 1
+
+
+1. <script src=”encode.js”></script>.
+     In the popup box that appears, Enter HeadStartCTF'16 and click submit. The answer is popped              up in an alert dialog box.
+2. The image seen is actually made up of 4 different images. Each image contains a fragment of a steganographed key inside it. The keys must be arranged in the order in which the site fetches the images. Which can be obtained seeing the source of the webpage. Assembling all the keys together, a hint says that there is only algorithm which generates two = signs at the end, which is base64. Decoding, the answer is obtained.
+3. Enter the payload “><img src=x onerror=alert(document.cookie)>” which pop ups xss with flag as cookie value. Decrypt flag from binary to ascii text and you will get the final flag
+4. We used a htmlspecialchars() php function to filter xss payloads , and included flag in header with url encoding . We wanted to know if anyone can bypass this function at the same time , we
+gave an hint ( get the flag from cookie) so if you can't get alert pop up you can still get the flag from 
+cookie header using burpsuite and decoding will give you final flag.
+5. The .class file must be decompiled using standard java decompilers, and then the code must be examined.
+6. The value seen must be first decoded from base64 and then from binary, which gives the key.
+7. The you tube video on the site contains a base64 encoded key. Decode it to get the key.
+8. The apk file must be installed on an android mobile and the logs must be examined. The logs record username with expected password and the entered password and also the login status.
+9. samy karkar
+10. Heartbleed
+11. The files must be downloaded on a linux machine. The script takes in a 4 digit passcode file. This must be generated and passed as an argument to the script. The script brute forces the program.
+12. The image must be opened as a text file using a text editor and then at the end the key will be visible.
